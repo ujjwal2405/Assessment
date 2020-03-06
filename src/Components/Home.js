@@ -73,7 +73,7 @@ class Home extends React.Component {
     return (
       <SafeAreaView style={{flex: 1, backgroundColor: 'silver'}}>
         
-      <View style={{flexDirection:"row",justifyContent:"space-between",paddingLeft:10,paddingRight:10}}>
+      <View style={{flexDirection:"row",justifyContent:"space-between",padding:10,backgroundColor:"white"}}>
           <View>
         <TouchableOpacity>
         <Image source={require('../Assets/Mobile.png')} ></Image>
@@ -82,9 +82,13 @@ class Home extends React.Component {
         
           <View>
               <TouchableOpacity>
-          <Image source={require('../Assets/location.png')} ></Image>
+         
+          <Image source={require('../Assets/Cart.png')} ></Image>
           </TouchableOpacity>
           </View>
+
+        
+
       </View>
         
         <ScrollView>
