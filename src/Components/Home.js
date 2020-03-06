@@ -73,14 +73,19 @@ class Home extends React.Component {
     return (
       <SafeAreaView style={{flex: 1, backgroundColor: 'silver'}}>
         
-        <View>
-            <TouchableOpacity>
-            <View>
-                <Image source={require("../Assets/Mobile.png")}/>
-            </View>
-            </TouchableOpacity>
-            
-        </View>
+      <View style={{flexDirection:"row",justifyContent:"space-between",paddingLeft:10,paddingRight:10}}>
+          <View>
+        <TouchableOpacity>
+        <Image source={require('../Assets/Mobile.png')} ></Image>
+        </TouchableOpacity>
+          </View>
+        
+          <View>
+              <TouchableOpacity>
+          <Image source={require('../Assets/location.png')} ></Image>
+          </TouchableOpacity>
+          </View>
+      </View>
         
         <ScrollView>
           <FlatList
@@ -307,7 +312,9 @@ const styles = StyleSheet.create({
   cardStyle: {
     margin: 10,
     backgroundColor: 'white',
-   flex:1,
+    flex:1,
+    width:200,
+    height:300,
    shadowOffset:{  width: 1,  height: 1,  },
     shadowColor: 'black',
     shadowOpacity: 0.5,
